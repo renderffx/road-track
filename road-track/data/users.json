@@ -12,7 +12,7 @@
       "citizenReports": 0,
       "citizenResolved": 0,
       "citizenBadges": [],
-      "lastLogin": 1775574342820
+      "lastLogin": 1775575846596
     },
     {
       "id": "worker-001",
@@ -31,7 +31,8 @@
       "citizenPoints": 0,
       "citizenReports": 0,
       "citizenResolved": 0,
-      "citizenBadges": []
+      "citizenBadges": [],
+      "lastLogin": 1775575919821
     },
     {
       "id": "citizen-1",

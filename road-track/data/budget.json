@@ -1,0 +1,49 @@
+{
+  "budget": [
+    {
+      "id": "budget-2026-3-0-1775571574668-twyp",
+      "category": "Road Repair",
+      "allocated": 50000,
+      "spent": 19792,
+      "month": 4,
+      "year": 2026,
+      "createdAt": 1775571574668
+    },
+    {
+      "id": "budget-2026-3-1-1775571574668-bfaa",
+      "category": "Street Lights",
+      "allocated": 20000,
+      "spent": 13928,
+      "month": 4,
+      "year": 2026,
+      "createdAt": 1775571574668
+    },
+    {
+      "id": "budget-2026-3-2-1775571574668-gwre",
+      "category": "Drainage",
+      "allocated": 30000,
+      "spent": 18162,
+      "month": 4,
+      "year": 2026,
+      "createdAt": 1775571574668
+    },
+    {
+      "id": "budget-2026-3-3-1775571574668-2895",
+      "category": "Sidewalks",
+      "allocated": 25000,
+      "spent": 12099,
+      "month": 4,
+      "year": 2026,
+      "createdAt": 1775571574668
+    },
+    {
+      "id": "budget-2026-3-4-1775571574668-88pt",
+      "category": "Emergency",
+      "allocated": 15000,
+      "spent": 7576,
+      "month": 4,
+      "year": 2026,
+      "createdAt": 1775571574668
+    }
+  ]
+}

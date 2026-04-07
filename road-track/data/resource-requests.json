@@ -1,0 +1,37 @@
+{
+  "resourceRequests": [
+    {
+      "id": "res-mock-1",
+      "reportId": "rep-mock-0",
+      "workerId": "worker-001",
+      "resource": "Cold Patch Asphalt",
+      "quantity": 10,
+      "unit": "bags",
+      "status": "approved",
+      "createdAt": 1775312374700,
+      "notes": "Need for downtown pothole repairs"
+    },
+    {
+      "id": "res-mock-2",
+      "reportId": "rep-mock-3",
+      "workerId": "worker-001",
+      "resource": "Concrete Mix",
+      "quantity": 5,
+      "unit": "bags",
+      "status": "pending",
+      "createdAt": 1775485174700,
+      "notes": "Sidewalk repair on Main St"
+    },
+    {
+      "id": "res-mock-3",
+      "reportId": "rep-mock-5",
+      "workerId": "worker-001",
+      "resource": "LED Street Light",
+      "quantity": 2,
+      "unit": "pieces",
+      "status": "fulfilled",
+      "createdAt": 1774966774700,
+      "notes": "Replacement for Oak Ave lights"
+    }
+  ]
+}

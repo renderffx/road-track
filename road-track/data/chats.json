@@ -1,0 +1,169 @@
+{
+  "messages": [
+    {
+      "id": "msg-mock-0",
+      "chatId": "chat-0",
+      "reportId": "rep-mock-0",
+      "senderId": "worker-001",
+      "senderName": "Field Worker",
+      "senderRole": "worker",
+      "content": "On my way to the location now",
+      "timestamp": 1775517574700,
+      "isRead": true
+    },
+    {
+      "id": "msg-mock-1",
+      "chatId": "chat-0",
+      "reportId": "rep-mock-0",
+      "senderId": "citizen-2",
+      "senderName": "Bob Smith",
+      "senderRole": "citizen",
+      "content": "Can you send me the exact address?",
+      "timestamp": 1775521174700,
+      "isRead": true
+    },
+    {
+      "id": "msg-mock-2",
+      "chatId": "chat-0",
+      "reportId": "rep-mock-0",
+      "senderId": "worker-001",
+      "senderName": "Field Worker",
+      "senderRole": "worker",
+      "content": "The damage is worse than the photo shows",
+      "timestamp": 1775524774700,
+      "isRead": true
+    },
+    {
+      "id": "msg-mock-3",
+      "chatId": "chat-1",
+      "reportId": "rep-mock-3",
+      "senderId": "citizen-4",
+      "senderName": "David Wilson",
+      "senderRole": "citizen",
+      "content": "I need additional materials for this repair",
+      "timestamp": 1775528374700,
+      "isRead": true
+    },
+    {
+      "id": "msg-mock-4",
+      "chatId": "chat-1",
+      "reportId": "rep-mock-3",
+      "senderId": "worker-001",
+      "senderName": "Field Worker",
+      "senderRole": "worker",
+      "content": "ETA 15 minutes",
+      "timestamp": 1775531974700,
+      "isRead": true
+    },
+    {
+      "id": "msg-mock-5",
+      "chatId": "chat-1",
+      "reportId": "rep-mock-3",
+      "senderId": "citizen-1",
+      "senderName": "Alice Johnson",
+      "senderRole": "citizen",
+      "content": "Can you confirm this is the right spot?",
+      "timestamp": 1775535574700,
+      "isRead": true
+    },
+    {
+      "id": "msg-mock-6",
+      "chatId": "chat-2",
+      "reportId": "rep-mock-6",
+      "senderId": "worker-001",
+      "senderName": "Field Worker",
+      "senderRole": "worker",
+      "content": "Repair completed, uploading after photos",
+      "timestamp": 1775539174700,
+      "isRead": true
+    },
+    {
+      "id": "msg-mock-7",
+      "chatId": "chat-2",
+      "reportId": "rep-mock-6",
+      "senderId": "citizen-3",
+      "senderName": "Carol Davis",
+      "senderRole": "citizen",
+      "content": "Thank you for the quick response!",
+      "timestamp": 1775542774700,
+      "isRead": true
+    },
+    {
+      "id": "msg-mock-8",
+      "chatId": "chat-2",
+      "reportId": "rep-mock-6",
+      "senderId": "worker-001",
+      "senderName": "Field Worker",
+      "senderRole": "worker",
+      "content": "The area is now safe for traffic",
+      "timestamp": 1775546374700,
+      "isRead": true
+    },
+    {
+      "id": "msg-mock-9",
+      "chatId": "chat-3",
+      "reportId": "rep-mock-9",
+      "senderId": "citizen-5",
+      "senderName": "Eva Martinez",
+      "senderRole": "citizen",
+      "content": "Need to reschedule due to weather",
+      "timestamp": 1775549974700,
+      "isRead": true
+    },
+    {
+      "id": "msg-mock-10",
+      "chatId": "chat-3",
+      "reportId": "rep-mock-9",
+      "senderId": "worker-001",
+      "senderName": "Field Worker",
+      "senderRole": "worker",
+      "content": "On my way to the location now",
+      "timestamp": 1775553574700,
+      "isRead": true
+    },
+    {
+      "id": "msg-mock-11",
+      "chatId": "chat-3",
+      "reportId": "rep-mock-9",
+      "senderId": "citizen-2",
+      "senderName": "Bob Smith",
+      "senderRole": "citizen",
+      "content": "Can you send me the exact address?",
+      "timestamp": 1775557174700,
+      "isRead": true
+    },
+    {
+      "id": "msg-mock-12",
+      "chatId": "chat-4",
+      "reportId": "rep-mock-12",
+      "senderId": "worker-001",
+      "senderName": "Field Worker",
+      "senderRole": "worker",
+      "content": "The damage is worse than the photo shows",
+      "timestamp": 1775560774700,
+      "isRead": true
+    },
+    {
+      "id": "msg-mock-13",
+      "chatId": "chat-4",
+      "reportId": "rep-mock-12",
+      "senderId": "citizen-4",
+      "senderName": "David Wilson",
+      "senderRole": "citizen",
+      "content": "I need additional materials for this repair",
+      "timestamp": 1775564374700,
+      "isRead": true
+    },
+    {
+      "id": "msg-mock-14",
+      "chatId": "chat-4",
+      "reportId": "rep-mock-12",
+      "senderId": "worker-001",
+      "senderName": "Field Worker",
+      "senderRole": "worker",
+      "content": "ETA 15 minutes",
+      "timestamp": 1775567974700,
+      "isRead": true
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "announcements": [
+    {
+      "id": "ann-mock-1",
+      "title": "Water Main Repair - 5th Avenue",
+      "content": "Water main repair starting on 5th Ave between Oak and Elm. Expect delays from 2 PM - 6 PM today.",
+      "type": "neighborhood",
+      "neighborhood": "Downtown",
+      "createdBy": "admin-001",
+      "createdAt": 1775398774700,
+      "expiresAt": 1775657974700,
+      "isActive": true,
+      "recipientCount": 1200
+    },
+    {
+      "id": "ann-mock-2",
+      "title": "City-Wide Pothole Blitz This Weekend",
+      "content": "Road crews will be working across all zones this weekend to address critical potholes. Thank you for your patience.",
+      "type": "blast",
+      "createdBy": "admin-001",
+      "createdAt": 1775485174700,
+      "isActive": true,
+      "recipientCount": 50000
+    },
+    {
+      "id": "ann-mock-3",
+      "title": "New Reporting Feature Available",
+      "content": "You can now upload videos and voice notes with your reports. Make reporting easier than ever!",
+      "type": "system",
+      "createdBy": "admin-001",
+      "createdAt": 1775139574700,
+      "isActive": true,
+      "recipientCount": 100000
+    }
+  ]
+}

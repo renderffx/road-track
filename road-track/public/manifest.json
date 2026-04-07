@@ -1,0 +1,16 @@
+{
+  "name": "Infrastructure Trace",
+  "short_name": "Trace",
+  "description": "Autonomous Urban Sensor - Zero-Slop Road Analysis",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

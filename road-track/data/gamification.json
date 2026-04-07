@@ -1,0 +1,129 @@
+{
+  "gamification": [
+    {
+      "userId": "citizen-1",
+      "points": 326,
+      "reportsSubmitted": 13,
+      "reportsVerified": 8,
+      "reportsResolved": 8,
+      "badges": [
+        "First Report",
+        "Community Hero"
+      ],
+      "rank": "Champion",
+      "streakDays": 8,
+      "lastActivity": 1775485174700,
+      "leaderboardPosition": 1
+    },
+    {
+      "userId": "citizen-2",
+      "points": 489,
+      "reportsSubmitted": 17,
+      "reportsVerified": 14,
+      "reportsResolved": 1,
+      "badges": [
+        "First Report",
+        "Community Hero",
+        "Eagle Eye"
+      ],
+      "rank": "Champion",
+      "streakDays": 13,
+      "lastActivity": 1775571574700,
+      "leaderboardPosition": 2
+    },
+    {
+      "userId": "citizen-3",
+      "points": 478,
+      "reportsSubmitted": 20,
+      "reportsVerified": 12,
+      "reportsResolved": 2,
+      "badges": [
+        "First Report",
+        "Community Hero"
+      ],
+      "rank": "Champion",
+      "streakDays": 5,
+      "lastActivity": 1775485174700,
+      "leaderboardPosition": 3
+    },
+    {
+      "userId": "citizen-4",
+      "points": 216,
+      "reportsSubmitted": 9,
+      "reportsVerified": 9,
+      "reportsResolved": 3,
+      "badges": [
+        "First Report",
+        "Community Hero"
+      ],
+      "rank": "Champion",
+      "streakDays": 1,
+      "lastActivity": 1775571574700,
+      "leaderboardPosition": 4
+    },
+    {
+      "userId": "citizen-5",
+      "points": 424,
+      "reportsSubmitted": 7,
+      "reportsVerified": 1,
+      "reportsResolved": 0,
+      "badges": [
+        "First Report",
+        "Community Hero",
+        "Eagle Eye"
+      ],
+      "rank": "Champion",
+      "streakDays": 4,
+      "lastActivity": 1775571574700,
+      "leaderboardPosition": 5
+    },
+    {
+      "userId": "user-mnopiokn-7kp0",
+      "points": 0,
+      "reportsSubmitted": 0,
+      "reportsVerified": 0,
+      "reportsResolved": 0,
+      "badges": [],
+      "rank": "Newcomer",
+      "streakDays": 0,
+      "lastActivity": 1775571654122,
+      "leaderboardPosition": 6
+    },
+    {
+      "userId": "user-mnoplpkj-0jsj",
+      "points": 0,
+      "reportsSubmitted": 0,
+      "reportsVerified": 0,
+      "reportsResolved": 0,
+      "badges": [],
+      "rank": "Newcomer",
+      "streakDays": 0,
+      "lastActivity": 1775571795389,
+      "leaderboardPosition": 7
+    },
+    {
+      "userId": "user-mnoqf4f2-ccgc",
+      "points": 0,
+      "reportsSubmitted": 0,
+      "reportsVerified": 0,
+      "reportsResolved": 0,
+      "badges": [],
+      "rank": "Newcomer",
+      "streakDays": 0,
+      "lastActivity": 1775573167661,
+      "leaderboardPosition": 8
+    },
+    {
+      "userId": "user-mnor5ihj-l4wl",
+      "points": 0,
+      "reportsSubmitted": 0,
+      "reportsVerified": 0,
+      "reportsResolved": 0,
+      "badges": [],
+      "rank": "Newcomer",
+      "streakDays": 0,
+      "lastActivity": 1775574398952,
+      "leaderboardPosition": 9
+    }
+  ]
+}

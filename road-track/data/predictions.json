@@ -1,0 +1,59 @@
+{
+  "predictions": [
+    {
+      "id": "pred-mock-1",
+      "damageType": "pothole",
+      "lat": 40.732800000000005,
+      "lng": -74.016,
+      "neighborhood": "Industrial District",
+      "probability": 0.85,
+      "predictedDate": 1776781174700,
+      "basis": "Historical pattern: 23 similar incidents in past year, heavy truck traffic increasing",
+      "createdAt": 1775485174700
+    },
+    {
+      "id": "pred-mock-2",
+      "damageType": "drainage",
+      "lat": 40.6978,
+      "lng": -73.986,
+      "neighborhood": "Waterfront",
+      "probability": 0.72,
+      "predictedDate": 1777385974700,
+      "basis": "Seasonal flooding pattern: 15 drainage failures during last rainy season",
+      "createdAt": 1775485174700
+    },
+    {
+      "id": "pred-mock-3",
+      "damageType": "sinkhole",
+      "lat": 40.7428,
+      "lng": -73.996,
+      "neighborhood": "Northside",
+      "probability": 0.45,
+      "predictedDate": 1779459574700,
+      "basis": "Underground water main age: 47 years, 3 nearby sinkholes in past 2 years",
+      "createdAt": 1775485174700
+    },
+    {
+      "id": "pred-mock-4",
+      "damageType": "crack",
+      "lat": 40.6878,
+      "lng": -74.021,
+      "neighborhood": "Southside",
+      "probability": 0.68,
+      "predictedDate": 1778163574700,
+      "basis": "Road age analysis: surface degradation rate 2x normal, temperature stress patterns",
+      "createdAt": 1775485174700
+    },
+    {
+      "id": "pred-mock-5",
+      "damageType": "light",
+      "lat": 40.7228,
+      "lng": -73.976,
+      "neighborhood": "East End",
+      "probability": 0.55,
+      "predictedDate": 1776435574700,
+      "basis": "Electrical infrastructure age: 32 years, 8 outages in past quarter",
+      "createdAt": 1775485174700
+    }
+  ]
+}

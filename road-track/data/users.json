@@ -1,0 +1,177 @@
+{
+  "users": [
+    {
+      "id": "admin-001",
+      "email": "admin@roadtrack.com",
+      "password": "admin123",
+      "name": "Admin User",
+      "role": "admin",
+      "createdAt": 1775571574638,
+      "isActive": true,
+      "citizenPoints": 0,
+      "citizenReports": 0,
+      "citizenResolved": 0,
+      "citizenBadges": [],
+      "lastLogin": 1775574342820
+    },
+    {
+      "id": "worker-001",
+      "email": "worker@roadtrack.com",
+      "password": "worker123",
+      "name": "Field Worker",
+      "role": "field_worker",
+      "createdAt": 1775571574638,
+      "isActive": true,
+      "workerZone": "Zone A",
+      "workerSkills": [
+        "pothole",
+        "road",
+        "crack"
+      ],
+      "citizenPoints": 0,
+      "citizenReports": 0,
+      "citizenResolved": 0,
+      "citizenBadges": []
+    },
+    {
+      "id": "citizen-1",
+      "email": "citizen1@example.com",
+      "password": "citizen123",
+      "name": "Alice Johnson",
+      "role": "citizen",
+      "createdAt": 1772979574700,
+      "isActive": true,
+      "citizenPoints": 326,
+      "citizenReports": 13,
+      "citizenResolved": 8,
+      "citizenBadges": [
+        "First Report",
+        "Community Hero"
+      ]
+    },
+    {
+      "id": "citizen-2",
+      "email": "citizen2@example.com",
+      "password": "citizen123",
+      "name": "Bob Smith",
+      "role": "citizen",
+      "createdAt": 1772979574700,
+      "isActive": true,
+      "citizenPoints": 489,
+      "citizenReports": 17,
+      "citizenResolved": 1,
+      "citizenBadges": [
+        "First Report",
+        "Community Hero",
+        "Eagle Eye"
+      ]
+    },
+    {
+      "id": "citizen-3",
+      "email": "citizen3@example.com",
+      "password": "citizen123",
+      "name": "Carol Davis",
+      "role": "citizen",
+      "createdAt": 1772979574700,
+      "isActive": true,
+      "citizenPoints": 478,
+      "citizenReports": 20,
+      "citizenResolved": 2,
+      "citizenBadges": [
+        "First Report",
+        "Community Hero"
+      ]
+    },
+    {
+      "id": "citizen-4",
+      "email": "citizen4@example.com",
+      "password": "citizen123",
+      "name": "David Wilson",
+      "role": "citizen",
+      "createdAt": 1772979574700,
+      "isActive": true,
+      "citizenPoints": 216,
+      "citizenReports": 9,
+      "citizenResolved": 3,
+      "citizenBadges": [
+        "First Report",
+        "Community Hero"
+      ]
+    },
+    {
+      "id": "citizen-5",
+      "email": "citizen5@example.com",
+      "password": "citizen123",
+      "name": "Eva Martinez",
+      "role": "citizen",
+      "createdAt": 1772979574700,
+      "isActive": true,
+      "citizenPoints": 424,
+      "citizenReports": 7,
+      "citizenResolved": 0,
+      "citizenBadges": [
+        "First Report",
+        "Community Hero",
+        "Eagle Eye"
+      ]
+    },
+    {
+      "id": "user-mnopiokn-7kp0",
+      "email": "citizen@test.com",
+      "password": "test123",
+      "name": "Test Citizen",
+      "role": "citizen",
+      "createdAt": 1775571654119,
+      "isActive": true,
+      "workerSkills": [],
+      "citizenPoints": 0,
+      "citizenReports": 0,
+      "citizenResolved": 0,
+      "citizenBadges": [],
+      "lastLogin": 1775571656996
+    },
+    {
+      "id": "user-mnoplpkj-0jsj",
+      "email": "citizen123@test.com",
+      "password": "test123",
+      "name": "John Citizen",
+      "role": "citizen",
+      "createdAt": 1775571795379,
+      "isActive": true,
+      "workerSkills": [],
+      "citizenPoints": 0,
+      "citizenReports": 0,
+      "citizenResolved": 0,
+      "citizenBadges": [],
+      "lastLogin": 1775571799357
+    },
+    {
+      "id": "user-mnoqf4f2-ccgc",
+      "email": "newuser@test.com",
+      "password": "test123",
+      "name": "Test User",
+      "role": "citizen",
+      "createdAt": 1775573167646,
+      "isActive": true,
+      "workerSkills": [],
+      "citizenPoints": 0,
+      "citizenReports": 0,
+      "citizenResolved": 0,
+      "citizenBadges": []
+    },
+    {
+      "id": "user-mnor5ihj-l4wl",
+      "email": "pawanpediredla@gmail.com",
+      "password": "ujrebfinrfief",
+      "name": "poawn",
+      "role": "citizen",
+      "createdAt": 1775574398935,
+      "isActive": true,
+      "workerSkills": [],
+      "citizenPoints": 0,
+      "citizenReports": 0,
+      "citizenResolved": 0,
+      "citizenBadges": []
+    }
+  ]
+}

@@ -1,21 +1,6 @@
 {
   "gamification": [
     {
-      "userId": "citizen-1",
-      "points": 326,
-      "reportsSubmitted": 13,
-      "reportsVerified": 8,
-      "reportsResolved": 8,
-      "badges": [
-        "First Report",
-        "Community Hero"
-      ],
-      "rank": "Champion",
-      "streakDays": 8,
-      "lastActivity": 1775485174700,
-      "leaderboardPosition": 1
-    },
-    {
       "userId": "citizen-2",
       "points": 489,
       "reportsSubmitted": 17,
@@ -29,7 +14,7 @@
       "rank": "Champion",
       "streakDays": 13,
       "lastActivity": 1775571574700,
-      "leaderboardPosition": 2
+      "leaderboardPosition": 1
     },
     {
       "userId": "citizen-3",
@@ -44,22 +29,7 @@
       "rank": "Champion",
       "streakDays": 5,
       "lastActivity": 1775485174700,
-      "leaderboardPosition": 3
-    },
-    {
-      "userId": "citizen-4",
-      "points": 216,
-      "reportsSubmitted": 9,
-      "reportsVerified": 9,
-      "reportsResolved": 3,
-      "badges": [
-        "First Report",
-        "Community Hero"
-      ],
-      "rank": "Champion",
-      "streakDays": 1,
-      "lastActivity": 1775571574700,
-      "leaderboardPosition": 4
+      "leaderboardPosition": 2
     },
     {
       "userId": "citizen-5",
@@ -74,6 +44,36 @@
       ],
       "rank": "Champion",
       "streakDays": 4,
+      "lastActivity": 1775571574700,
+      "leaderboardPosition": 3
+    },
+    {
+      "userId": "citizen-1",
+      "points": 331,
+      "reportsSubmitted": 13,
+      "reportsVerified": 9,
+      "reportsResolved": 8,
+      "badges": [
+        "First Report",
+        "Community Hero"
+      ],
+      "rank": "Champion",
+      "streakDays": 8,
+      "lastActivity": 1775576227068,
+      "leaderboardPosition": 4
+    },
+    {
+      "userId": "citizen-4",
+      "points": 216,
+      "reportsSubmitted": 9,
+      "reportsVerified": 9,
+      "reportsResolved": 3,
+      "badges": [
+        "First Report",
+        "Community Hero"
+      ],
+      "rank": "Champion",
+      "streakDays": 1,
       "lastActivity": 1775571574700,
       "leaderboardPosition": 5
     },
@@ -124,6 +124,18 @@
       "streakDays": 0,
       "lastActivity": 1775574398952,
       "leaderboardPosition": 9
+    },
+    {
+      "userId": "admin-001",
+      "points": 0,
+      "reportsSubmitted": 0,
+      "reportsVerified": 0,
+      "reportsResolved": 0,
+      "badges": [],
+      "rank": "Newcomer",
+      "streakDays": 0,
+      "lastActivity": 1775576164492,
+      "leaderboardPosition": 10
     }
   ]
 }

@@ -9,15 +9,16 @@
       "severity": 5,
       "deviceId": "qL1eOsPG6Iqx",
       "isAnonymous": false,
-      "verificationCount": 2,
+      "verificationCount": 3,
       "upvotes": [
         "qL1eOsPG6Iqx",
-        "qL1eOsPG6Iqx"
+        "qL1eOsPG6Iqx",
+        "citizen-1"
       ],
-      "status": "active",
+      "status": "verified",
       "priority": 10,
       "createdAt": 1775572231361,
-      "updatedAt": 1775572307166,
+      "updatedAt": 1775576227063,
       "slaDeadline": 1776177031361
     },
     {

@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useAuth } from '@/lib/auth-context';
+import { useRouter } from 'next/navigation';
 import { UserRole } from '@/types';
 
 const demoAccounts = [
@@ -12,6 +13,7 @@ const demoAccounts = [
 
 export default function AuthModal({ onClose }: { onClose?: () => void }) {
   const { login, register } = useAuth();
+  const router = useRouter();
   const [mode, setMode] = useState<'select' | 'login' | 'register'>('select');
   const [selectedRole, setSelectedRole] = useState<UserRole>(UserRole.CITIZEN);
   const [email, setEmail] = useState('');
@@ -26,9 +28,9 @@ export default function AuthModal({ onClose }: { onClose?: () => void }) {
     try {
       const success = await login(account.email, account.password);
       if (success) {
-        if (account.role === 'admin') window.location.href = '/admin';
-        else if (account.role === 'field_worker') window.location.href = '/worker';
-        else window.location.href = '/citizen';
+        if (account.role === 'admin') router.push('/admin');
+        else if (account.role === 'field_worker') router.push('/worker');
+        else router.push('/citizen');
       } else {
         setError('Invalid credentials');
       }
@@ -60,9 +62,9 @@ export default function AuthModal({ onClose }: { onClose?: () => void }) {
 
     setLoading(false);
     if (success) {
-      if (selectedRole === 'admin') window.location.href = '/admin';
-      else if (selectedRole === 'field_worker') window.location.href = '/worker';
-      else window.location.href = '/citizen';
+      if (selectedRole === 'admin') router.push('/admin');
+      else if (selectedRole === 'field_worker') router.push('/worker');
+      else router.push('/citizen');
     }
   };
 

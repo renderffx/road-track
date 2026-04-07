@@ -3,10 +3,12 @@
 import { useState, useEffect } from 'react';
 import AuthModal from '@/components/auth/AuthModal';
 import { useAuth } from '@/lib/auth-context';
+import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 
 export default function Home() {
   const { user, logout } = useAuth();
+  const router = useRouter();
   const [showModal, setShowModal] = useState(false);
   const [mounted, setMounted] = useState(false);
 
@@ -15,8 +17,11 @@ export default function Home() {
   useEffect(() => {
     if (mounted && user) {
       setShowModal(false);
+      if (user.role === 'admin') router.push('/admin');
+      else if (user.role === 'field_worker') router.push('/worker');
+      else router.push('/citizen');
     }
-  }, [user, mounted]);
+  }, [user, mounted, router]);
 
   if (!mounted) {
     return (

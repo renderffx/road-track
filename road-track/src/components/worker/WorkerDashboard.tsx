@@ -44,6 +44,8 @@ function TaskQueueTab({ workerId, workerName }: { workerId: string; workerName: 
 
   useEffect(() => {
     loadTasks();
+    const interval = setInterval(loadTasks, 5000);
+    return () => clearInterval(interval);
   }, []);
 
   const loadTasks = async () => {

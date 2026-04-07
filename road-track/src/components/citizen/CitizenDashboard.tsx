@@ -17,6 +17,8 @@ export default function CitizenDashboard({ userId, userName }: CitizenDashboardP
 
   useEffect(() => {
     loadReports();
+    const interval = setInterval(loadReports, 5000);
+    return () => clearInterval(interval);
   }, []);
 
   const loadReports = async () => {

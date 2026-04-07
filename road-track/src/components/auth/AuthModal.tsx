@@ -28,9 +28,10 @@ export default function AuthModal({ onClose }: { onClose?: () => void }) {
     try {
       const success = await login(account.email, account.password);
       if (success) {
-        if (account.role === 'admin') router.push('/admin');
-        else if (account.role === 'field_worker') router.push('/worker');
-        else router.push('/citizen');
+        await new Promise(resolve => setTimeout(resolve, 100));
+        if (account.role === 'admin') window.location.href = '/admin';
+        else if (account.role === 'field_worker') window.location.href = '/worker';
+        else window.location.href = '/citizen';
       } else {
         setError('Invalid credentials');
       }
@@ -62,9 +63,10 @@ export default function AuthModal({ onClose }: { onClose?: () => void }) {
 
     setLoading(false);
     if (success) {
-      if (selectedRole === 'admin') router.push('/admin');
-      else if (selectedRole === 'field_worker') router.push('/worker');
-      else router.push('/citizen');
+      await new Promise(resolve => setTimeout(resolve, 100));
+      if (selectedRole === 'admin') window.location.href = '/admin';
+      else if (selectedRole === 'field_worker') window.location.href = '/worker';
+      else window.location.href = '/citizen';
     }
   };
 

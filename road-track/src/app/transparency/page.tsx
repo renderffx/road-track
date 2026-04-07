@@ -15,6 +15,14 @@ export default function TransparencyPage() {
         setReports(data.reports || []);
         setLoading(false);
       });
+
+    const interval = setInterval(() => {
+      fetch('/api/reports?limit=1000')
+        .then(res => res.json())
+        .then(data => setReports(data.reports || []));
+    }, 5000);
+
+    return () => clearInterval(interval);
   }, []);
 
   const totalReports = reports.length;

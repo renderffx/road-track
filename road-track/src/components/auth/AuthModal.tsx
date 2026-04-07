@@ -23,14 +23,19 @@ export default function AuthModal({ onClose }: { onClose?: () => void }) {
   const handleDemoLogin = async (account: typeof demoAccounts[0]) => {
     setLoading(true);
     setError('');
-    const success = await login(account.email, account.password);
-    setLoading(false);
-    if (success) {
-      if (account.role === 'admin') window.location.href = '/admin';
-      else if (account.role === 'field_worker') window.location.href = '/worker';
-      else window.location.href = '/citizen';
-    } else {
-      setError('Demo login failed');
+    try {
+      const success = await login(account.email, account.password);
+      if (success) {
+        if (account.role === 'admin') window.location.href = '/admin';
+        else if (account.role === 'field_worker') window.location.href = '/worker';
+        else window.location.href = '/citizen';
+      } else {
+        setError('Invalid credentials');
+      }
+    } catch (e) {
+      setError('Login failed. Please try again.');
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -88,6 +93,8 @@ export default function AuthModal({ onClose }: { onClose?: () => void }) {
             <div className="space-y-4">
               <p className="text-sm text-zinc-500 mb-4">Choose how you want to continue:</p>
               
+              {error && <div className="p-3 rounded-lg bg-red-50 dark:bg-red-900/20 text-red-600 dark:text-red-400 text-sm">{error}</div>}
+
               <div className="space-y-3">
                 {demoAccounts.map((account) => (
                   <button
@@ -101,9 +108,13 @@ export default function AuthModal({ onClose }: { onClose?: () => void }) {
                       <div className="font-semibold text-sm">{account.label}</div>
                       <div className="text-xs text-zinc-500">{account.email}</div>
                     </div>
-                    <svg className="ml-auto w-5 h-5 text-zinc-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <path d="M9 18l6-6-6-6" />
-                    </svg>
+                    {loading && loading ? (
+                      <div className="ml-auto w-5 h-5 border-2 border-amber-500 border-t-transparent rounded-full animate-spin" />
+                    ) : (
+                      <svg className="ml-auto w-5 h-5 text-zinc-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M9 18l6-6-6-6" />
+                      </svg>
+                    )}
                   </button>
                 ))}
               </div>

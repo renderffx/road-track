@@ -9,17 +9,20 @@
       "severity": 5,
       "deviceId": "qL1eOsPG6Iqx",
       "isAnonymous": false,
-      "verificationCount": 3,
+      "verificationCount": 4,
       "upvotes": [
         "qL1eOsPG6Iqx",
         "qL1eOsPG6Iqx",
+        "citizen-1",
         "citizen-1"
       ],
       "status": "verified",
       "priority": 10,
       "createdAt": 1775572231361,
-      "updatedAt": 1775576227063,
-      "slaDeadline": 1776177031361
+      "updatedAt": 1775576451116,
+      "slaDeadline": 1776177031361,
+      "assignedTo": "worker-001",
+      "assignedAt": 1775576388336
     },
     {
       "id": "rep-mock-d",
@@ -291,7 +294,7 @@
       "address": "669 Broadway",
       "damageType": "pothole",
       "severity": 10,
-      "status": "verified",
+      "status": "in_progress",
       "priority": 10,
       "description": "Road surface crumbling badly",
       "deviceId": "device-5",
@@ -306,7 +309,7 @@
         "user-5"
       ],
       "createdAt": 1775139574700,
-      "updatedAt": 1775139574700,
+      "updatedAt": 1775576390265,
       "aiValidated": false,
       "aiConfidence": 0.9233419172571391,
       "fraudFlag": false,
@@ -315,7 +318,9 @@
       "slaBreached": false,
       "neighborhood": "Waterfront",
       "beforeImages": [],
-      "afterImages": []
+      "afterImages": [],
+      "assignedTo": "worker-001",
+      "assignedAt": 1775576390186
     },
     {
       "id": "rep-mock-z",

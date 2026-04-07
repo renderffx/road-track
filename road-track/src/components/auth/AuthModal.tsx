@@ -13,7 +13,6 @@ const demoAccounts = [
 
 export default function AuthModal({ onClose }: { onClose?: () => void }) {
   const { login, register } = useAuth();
-  const router = useRouter();
   const [mode, setMode] = useState<'select' | 'login' | 'register'>('select');
   const [selectedRole, setSelectedRole] = useState<UserRole>(UserRole.CITIZEN);
   const [email, setEmail] = useState('');
@@ -25,19 +24,13 @@ export default function AuthModal({ onClose }: { onClose?: () => void }) {
   const handleDemoLogin = async (account: typeof demoAccounts[0]) => {
     setLoading(true);
     setError('');
-    try {
-      const success = await login(account.email, account.password);
-      if (success) {
-        await new Promise(resolve => setTimeout(resolve, 100));
-        if (account.role === 'admin') window.location.href = '/admin';
-        else if (account.role === 'field_worker') window.location.href = '/worker';
-        else window.location.href = '/citizen';
-      } else {
-        setError('Invalid credentials');
-      }
-    } catch (e) {
-      setError('Login failed. Please try again.');
-    } finally {
+    const success = await login(account.email, account.password);
+    if (success) {
+      if (account.role === 'admin') window.location.href = '/admin';
+      else if (account.role === 'field_worker') window.location.href = '/worker';
+      else window.location.href = '/citizen';
+    } else {
+      setError('Invalid credentials');
       setLoading(false);
     }
   };
@@ -63,9 +56,8 @@ export default function AuthModal({ onClose }: { onClose?: () => void }) {
 
     setLoading(false);
     if (success) {
-      await new Promise(resolve => setTimeout(resolve, 100));
-      if (selectedRole === 'admin') window.location.href = '/admin';
-      else if (selectedRole === 'field_worker') window.location.href = '/worker';
+      if (selectedRole === 'admin' || (mode === 'login' && email.includes('admin'))) window.location.href = '/admin';
+      else if (selectedRole === 'field_worker' || (mode === 'login' && email.includes('worker'))) window.location.href = '/worker';
       else window.location.href = '/citizen';
     }
   };

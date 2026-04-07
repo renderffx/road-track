@@ -49,9 +49,9 @@
     },
     {
       "userId": "citizen-1",
-      "points": 331,
+      "points": 336,
       "reportsSubmitted": 13,
-      "reportsVerified": 9,
+      "reportsVerified": 10,
       "reportsResolved": 8,
       "badges": [
         "First Report",
@@ -59,7 +59,7 @@
       ],
       "rank": "Champion",
       "streakDays": 8,
-      "lastActivity": 1775576227068,
+      "lastActivity": 1775576451129,
       "leaderboardPosition": 4
     },
     {

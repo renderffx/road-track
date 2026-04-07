@@ -144,15 +144,38 @@ export const useStore = create<AppStore>()(
 );
 
 let refreshInterval: ReturnType<typeof setInterval> | null = null;
+let lastDataHash = '';
+
+function hashData(data: any[]): string {
+  return JSON.stringify(data.map(r => r.id + '-' + r.status + '-' + r.updatedAt).sort());
+}
 
 export function startAutoRefresh() {
   if (refreshInterval) return;
   
-  refreshInterval = setInterval(() => {
+  const checkAndSync = async () => {
     if (useStore.getState().realTimeEnabled) {
-      useStore.getState().refreshReports();
+      try {
+        const res = await fetch(`${API_BASE}/reports?limit=100`);
+        const data = await res.json();
+        if (data.reports) {
+          const newHash = hashData(data.reports);
+          if (newHash !== lastDataHash) {
+            lastDataHash = newHash;
+            useStore.setState({ 
+              reports: data.reports,
+              lastUpdated: data.lastUpdated || Date.now(),
+            });
+          }
+        }
+      } catch (e) {
+        console.error('Sync error:', e);
+      }
     }
-  }, 5000);
+  };
+  
+  checkAndSync();
+  refreshInterval = setInterval(checkAndSync, 3000);
 }
 
 export function stopAutoRefresh() {

@@ -61,7 +61,12 @@ export default function AdminPage() {
     try {
       const res = await fetch('/api/reports');
       const data = await res.json();
-      if (data.reports) setReports(data.reports);
+      if (data.reports) {
+        setReports(prev => {
+          if (JSON.stringify(prev) === JSON.stringify(data.reports)) return prev;
+          return data.reports;
+        });
+      }
     } catch (e) {
       console.error('Failed to fetch:', e);
     } finally {
@@ -72,7 +77,7 @@ export default function AdminPage() {
 
   useEffect(() => {
     fetchReports();
-    const interval = setInterval(() => fetchReports(false), 5000);
+    const interval = setInterval(fetchReports, 5000);
     return () => clearInterval(interval);
   }, [fetchReports]);
 
